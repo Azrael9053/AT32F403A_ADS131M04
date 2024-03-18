@@ -1,0 +1,21 @@
+--cpu=Cortex-M4.fp
+".\objects\main.o"
+".\objects\at32f403a_407_wk_config.o"
+".\objects\at32f403a_407_int.o"
+".\objects\ads131m0x.o"
+".\objects\at32f403a_407_crm.o"
+".\objects\at32f403a_407_debug.o"
+".\objects\at32f403a_407_exint.o"
+".\objects\at32f403a_407_flash.o"
+".\objects\at32f403a_407_gpio.o"
+".\objects\at32f403a_407_misc.o"
+".\objects\at32f403a_407_pwc.o"
+".\objects\at32f403a_407_spi.o"
+".\objects\at32f403a_407_tmr.o"
+".\objects\at32f403a_407_usart.o"
+".\objects\startup_at32f403a_407.o"
+".\objects\system_at32f403a_407.o"
+--strict --scatter ".\objects\AT32F403ARGT7_WorkBench.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\listings\AT32F403ARGT7_WorkBench.map" -o .\objects\AT32F403ARGT7_WorkBench.axf
